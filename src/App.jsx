@@ -93,8 +93,13 @@ export default function App() {
       {/* Floating Pill Navigation with Animations */}
       <nav className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ${scrolled ? 'translate-y-0' : 'translate-y-2'}`}>
         <div className={`flex items-center space-x-1 md:space-x-4 px-6 py-3 rounded-full border transition-all duration-500 ${scrolled ? 'bg-white/90 backdrop-blur-xl border-slate-200 shadow-md scale-100' : 'bg-white/50 backdrop-blur-md border-slate-200/50 scale-105'}`}>
-          <a href="#home" className="text-sm font-bold tracking-tight text-slate-900 mr-4 md:mr-8 hover:text-indigo-600 transition-colors">
-            pravin.dev
+          <a href="#home" className="flex items-center gap-2 text-sm font-bold tracking-tight text-slate-900 mr-4 md:mr-8 hover:text-indigo-600 transition-colors">
+            <img
+              src="https://agno.blob.core.windows.net/dream-images/9922004070.jpeg"
+              alt="pravin's-portfolio logo"
+              className="h-8 w-8 rounded-full object-cover ring-1 ring-slate-200 shadow-sm"
+            />
+            <span>pravin's-portfolio</span>
           </a>
           <div className="hidden md:flex items-center space-x-2 text-sm font-medium text-slate-500 p-1">
             {['About', 'Projects', 'Experience'].map((item) => {
